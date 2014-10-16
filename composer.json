@@ -1,0 +1,24 @@
+{
+  "name": "orukusaki/TwiML",
+  "description": "Fluent API for TwiML responses",
+  "keywords": ["Fluent", "Twilio", "TwiML", "twiml"],
+  "minimum-stability": "beta",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Peter Smith",
+      "email": "peter@orukusaki.co.uk"
+    }
+  ],
+  "require-dev": {
+    "phpspec/phpspec": "*"
+  },
+  "config": {
+    "bin-dir": "bin"
+  },
+  "autoload": {
+    "psr-4": {
+      "Orukusaki\\TwiML\\": "src/"
+    }
+  }
+}
