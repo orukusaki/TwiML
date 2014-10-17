@@ -84,6 +84,9 @@ abstract class Node
      */
     public function __toString()
     {
+        if ($this->parent) {
+            return (string) $this->parent;
+        }
         $doc = new DomDocument();
         $doc->appendChild($this->asXml($doc));
 
