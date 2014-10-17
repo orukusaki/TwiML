@@ -25,7 +25,7 @@ More complex responses can be created in function chains:
 ```php
 <?php
 echo (new Response())
-    ->say('S'il vous plaît laissez un message')
+    ->say('S\'il vous plaît laissez un message')
         ->withVoice('alice')
         ->withLanguage('fr-FR')
     ->end()
