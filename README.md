@@ -12,10 +12,25 @@ $response->dial('+441473000000')
 
 echo $response;
 ```
+Will output:
+```xml
+<?xml version="1.0"?>
+<Response>
+  <Say>Thanks for your call</Say>
+  <Dial action="http://www.example.com/twilio/callback">+441473000000</Dial>
+</Response>
+```
 
 It's good for really quick one-liners (php >= 5.4):
 ```php
 echo (new Response())->say('Hi');
+```
+Will output:
+```xml
+<?xml version="1.0"?>
+<Response>
+  <Say>Hi</Say>
+</Response>
 ```
 
 More complex responses can be created in function chains:
@@ -29,10 +44,25 @@ echo (new Response())
         ->withAction('http://www.example.com/twilio/recording');
     
 ```
+Will output:
+```xml
+<?xml version="1.0"?>
+<Response>
+  <Say voice="alice" language="fr-FR">S'il vous pla&#xEE;t laissez un message</Say>
+  <Record action="http://www.example.com/twilio/recording"/>
+</Response>
+```
 
 You can also set multiple attributes at once:
 ```php
 echo (new Response())
     ->dial('+4400000000')
         ->with(['timeout' => 10, 'record' => 'record-from-answer']);
+```
+will output:
+```xml
+<?xml version="1.0"?>
+<Response>
+  <Dial timeout="10" record="record-from-answer">+4400000000</Dial>
+</Response>
 ```

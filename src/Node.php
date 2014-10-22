@@ -43,10 +43,14 @@ abstract class Node
      * @param array $attributes
      *
      * @api
+     *
+     * @return Node
      */
     public function with(array $attributes)
     {
         $this->attributes = array_merge($this->attributes, $attributes);
+
+        return $this;
     }
 
     /**

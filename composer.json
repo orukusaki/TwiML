@@ -14,7 +14,9 @@
     "php": ">=5.3"
   },
   "require-dev": {
-    "phpspec/phpspec": "*"
+    "phpspec/phpspec": "*",
+    "behat/behat": "~3.0",
+    "bossa/phpspec2-expect": "~1.0"
   },
   "config": {
     "bin-dir": "bin"
