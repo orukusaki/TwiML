@@ -9,7 +9,6 @@ use Orukusaki\TwiML\Node;
  * @package Orukusaki\TwiML\Noun
  * @see https://www.twilio.com/docs/api/twiml/sip
  */
-
 class Sip extends Node
 {
     /**

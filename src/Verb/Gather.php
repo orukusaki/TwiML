@@ -38,7 +38,7 @@ class Gather extends Node
      */
     public function pause($length)
     {
-        return (new Pause($this))->setLength($length);
+        return (new Pause($this))->withLength($length);
     }
 
     /**

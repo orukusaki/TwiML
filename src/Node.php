@@ -3,6 +3,7 @@
 namespace Orukusaki\TwiML;
 
 use DOMDocument;
+use DOMElement;
 
 /**
  * Class Node
@@ -61,7 +62,7 @@ abstract class Node
     /**
      * @param DOMDocument $document
      *
-     * @return \DOMElement
+     * @return DOMElement
      */
     protected function asXml(DomDocument $document)
     {

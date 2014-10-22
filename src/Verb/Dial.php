@@ -23,6 +23,46 @@ class Dial extends Node
     }
 
     /**
+     * @param $name
+     *
+     * @return Noun\Client
+     */
+    public function withClient($name)
+    {
+        return new Noun\Client($this, $name);
+    }
+
+    /**
+     * @param $url
+     *
+     * @return Noun\Sip
+     */
+    public function withSip($url)
+    {
+        return new Noun\Sip($this, $url);
+    }
+
+    /**
+     * @param $room
+     *
+     * @return Noun\Conference
+     */
+    public function withConference($room)
+    {
+        return new Noun\Conference($this, $room);
+    }
+
+    /**
+     * @param $name
+     *
+     * @return Noun\Queue
+     */
+    public function withQueue($name)
+    {
+        return new Noun\Queue($this, $name);
+    }
+
+    /**
      * @param string $timeout
      *
      * @return Dial
