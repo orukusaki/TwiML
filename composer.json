@@ -1,6 +1,6 @@
 {
-  "name": "orukusaki/TwiML",
-  "description": "Fluent API for TwiML responses",
+  "name": "orukusaki/twiml",
+  "description": "Fluent API for Twilio TwiML responses",
   "keywords": ["Fluent", "Twilio", "TwiML", "twiml"],
   "minimum-stability": "beta",
   "license": "MIT",
@@ -14,7 +14,6 @@
     "php": ">=5.3"
   },
   "require-dev": {
-    "phpspec/phpspec": "*",
     "behat/behat": "~3.0",
     "bossa/phpspec2-expect": "~1.0"
   },
