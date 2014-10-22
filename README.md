@@ -3,9 +3,7 @@ This library offers an easy way to generate TwiML responses for Twilio apps, usi
 
 For example:
 ```php
-<?php
-
-use Orukusaki\TwiML\Response;
+use Orukusaki\TwiML\Voice\Response;
 
 $response = new Response();
 $response->say('Thanks for your call');
@@ -15,15 +13,13 @@ $response->dial('+441473000000')
 echo $response;
 ```
 
-It's good for really quick one-liners:
+It's good for really quick one-liners (php >= 5.4):
 ```php
-<?php
 echo (new Response())->say('Hi');
 ```
 
 More complex responses can be created in function chains:
 ```php
-<?php
 echo (new Response())
     ->say('S\'il vous plaît laissez un message')
         ->withVoice('alice')
@@ -36,7 +32,6 @@ echo (new Response())
 
 You can also set multiple attributes at once:
 ```php
-<?php
 echo (new Response())
     ->dial('+4400000000')
         ->with(['timeout' => 10, 'record' => 'record-from-answer']);
