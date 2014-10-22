@@ -118,6 +118,8 @@ class Response extends Node
      */
     public function pause($length)
     {
-        return (new Verb\Pause($this))->withLength($length);
+        $pause = new Verb\Pause($this);
+
+        return $pause->withLength($length);
     }
 }

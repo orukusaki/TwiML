@@ -10,6 +10,9 @@
       "email": "peter@orukusaki.co.uk"
     }
   ],
+  "require": {
+    "php": ">=5.3"
+  },
   "require-dev": {
     "phpspec/phpspec": "*"
   },

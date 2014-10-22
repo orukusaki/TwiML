@@ -19,12 +19,12 @@ abstract class Node
     /**
      * @var array
      */
-    protected $attributes = [];
+    protected $attributes = array();
 
     /**
      * @var Node[]
      */
-    protected $children = [];
+    protected $children = array();
 
     /**
      * @param Node        $parent
