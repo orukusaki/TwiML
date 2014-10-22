@@ -1,5 +1,5 @@
 # TwiML
-This library offers an easy way to generate TwiML responses for Twilio apps, using a nice fluent interface.
+This library offers an easy way to generate TwiML responses for Twilio apps, using a nice fluent interface.  It doesn't use any magic, so your IDE should be able to autocomplete all method calls as you type.
 
 For example:
 ```php
@@ -42,7 +42,6 @@ echo (new Response())
     ->end()
     ->record()
         ->withAction('http://www.example.com/twilio/recording');
-    
 ```
 Will output:
 ```xml
