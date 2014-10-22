@@ -1,6 +1,6 @@
 <?php
 
-namespace Orukusaki\TwiML\Noun;
+namespace Orukusaki\TwiML\Voice\Noun;
 
 use Orukusaki\TwiML\Node;
 

@@ -1,20 +1,20 @@
 <?php
 
-namespace Orukusaki\TwiML\Noun;
+namespace Orukusaki\TwiML\Voice\Noun;
 
 use Orukusaki\TwiML\Node;
 
 /**
- * Class Queue
+ * Class Client
  * @package Orukusaki\TwiML\Noun
- * @see https://www.twilio.com/docs/api/twiml/queue
+ * @see https://www.twilio.com/docs/api/twiml/client
  */
-class Queue extends Node
+class Client extends Node
 {
     /**
      * @param string $url
      *
-     * @return Queue
+     * @return Client
      */
     public function withUrl($url)
     {
@@ -26,7 +26,7 @@ class Queue extends Node
     /**
      * @param string $method
      *
-     * @return Queue
+     * @return Client
      */
     public function withMethod($method)
     {

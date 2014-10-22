@@ -1,6 +1,6 @@
 <?php
 
-namespace Orukusaki\TwiML\Verb;
+namespace Orukusaki\TwiML\Voice\Verb;
 
 use Orukusaki\TwiML\Node;
 

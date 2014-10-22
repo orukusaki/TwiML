@@ -1,32 +1,20 @@
 <?php
 
-namespace Orukusaki\TwiML\Noun;
+namespace Orukusaki\TwiML\Voice\Noun;
 
 use Orukusaki\TwiML\Node;
 
 /**
- * Class Number
+ * Class Queue
  * @package Orukusaki\TwiML\Noun
- * @see https://www.twilio.com/docs/api/twiml/number
+ * @see https://www.twilio.com/docs/api/twiml/queue
  */
-class Number extends Node
+class Queue extends Node
 {
-    /**
-     * @param string $sendDigits
-     *
-     * @return Number
-     */
-    public function withSendDigits($sendDigits)
-    {
-        $this->attributes['sendDigits'] = $sendDigits;
-
-        return $this;
-    }
-
     /**
      * @param string $url
      *
-     * @return Number
+     * @return Queue
      */
     public function withUrl($url)
     {
@@ -38,7 +26,7 @@ class Number extends Node
     /**
      * @param string $method
      *
-     * @return Number
+     * @return Queue
      */
     public function withMethod($method)
     {

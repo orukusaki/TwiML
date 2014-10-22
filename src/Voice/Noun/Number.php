@@ -1,20 +1,32 @@
 <?php
 
-namespace Orukusaki\TwiML\Noun;
+namespace Orukusaki\TwiML\Voice\Noun;
 
 use Orukusaki\TwiML\Node;
 
 /**
- * Class Client
+ * Class Number
  * @package Orukusaki\TwiML\Noun
- * @see https://www.twilio.com/docs/api/twiml/client
+ * @see https://www.twilio.com/docs/api/twiml/number
  */
-class Client extends Node
+class Number extends Node
 {
+    /**
+     * @param string $sendDigits
+     *
+     * @return Number
+     */
+    public function withSendDigits($sendDigits)
+    {
+        $this->attributes['sendDigits'] = $sendDigits;
+
+        return $this;
+    }
+
     /**
      * @param string $url
      *
-     * @return Client
+     * @return Number
      */
     public function withUrl($url)
     {
@@ -26,7 +38,7 @@ class Client extends Node
     /**
      * @param string $method
      *
-     * @return Client
+     * @return Number
      */
     public function withMethod($method)
     {

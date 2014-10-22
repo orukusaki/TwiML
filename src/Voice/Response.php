@@ -1,6 +1,8 @@
 <?php
 
-namespace Orukusaki\TwiML;
+namespace Orukusaki\TwiML\Voice;
+
+use Orukusaki\TwiML\Node;
 
 /**
  * Class Response

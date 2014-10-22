@@ -1,8 +1,8 @@
 <?php
 
-namespace Orukusaki\TwiML\Verb;
+namespace Orukusaki\TwiML\Voice\Verb;
 
-use Orukusaki\TwiML\Noun;
+use Orukusaki\TwiML\Voice\Noun;
 use Orukusaki\TwiML\Node;
 
 /**
