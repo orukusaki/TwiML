@@ -1,6 +1,8 @@
 # TwiML
 This library offers an easy way to generate TwiML responses for Twilio apps, using a nice fluent interface.  It doesn't use any magic, so your IDE should be able to autocomplete all method calls as you type.
 
+[![Build Status](https://travis-ci.org/orukusaki/TwiML.svg?branch=master)](https://travis-ci.org/orukusaki/TwiML)
+
 For example:
 ```php
 use Orukusaki\TwiML\Voice\Response;
@@ -64,4 +66,8 @@ will output:
 <Response>
   <Dial timeout="10" record="record-from-answer">+4400000000</Dial>
 </Response>
+```
+## Installing
+```bash
+composer install "orukusaki/twiml"
 ```
