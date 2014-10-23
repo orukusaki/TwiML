@@ -1,5 +1,9 @@
 Feature: Readme Examples
 
+  @5.5
+  @5.4
+  @5.3
+  @hhvm
   Scenario: Basic Usage
     Given a php file with:
     """
@@ -22,6 +26,9 @@ Feature: Readme Examples
     </Response>
     """
 
+  @5.5
+  @5.4
+  @hhvm
   Scenario: Quick One liner
     Given a php file with:
     """
@@ -38,6 +45,9 @@ Feature: Readme Examples
     </Response>
     """
 
+  @5.5
+  @5.4
+  @hhvm
   Scenario: More Complex Chained
     Given a php file with:
     """
@@ -61,6 +71,9 @@ Feature: Readme Examples
     </Response>
     """
 
+  @5.5
+  @5.4
+  @hhvm
   Scenario: Set multiple attributes at once
     Given a php file with:
     """
