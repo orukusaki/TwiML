@@ -94,7 +94,7 @@ class Response extends Node
     }
 
     /**
-     * @return Verb\Hangup
+     * @return Verb\Reject
      */
     public function reject()
     {
@@ -104,7 +104,7 @@ class Response extends Node
     /**
      * @param string $url
      *
-     * @return Verb\Hangup
+     * @return Verb\Redirect
      */
     public function redirect($url)
     {

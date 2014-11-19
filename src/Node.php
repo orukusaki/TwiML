@@ -27,6 +27,11 @@ abstract class Node
     protected $children = array();
 
     /**
+     * @var null|string
+     */
+    protected $content;
+
+    /**
      * @param Node        $parent
      * @param string|null $content
      */
@@ -54,7 +59,7 @@ abstract class Node
     }
 
     /**
-     * @return mixed
+     * @return string
      */
     protected function getTagName()
     {
