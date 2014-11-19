@@ -2,6 +2,7 @@
 This library offers an easy way to generate TwiML responses for Twilio apps, using a nice fluent interface.  It doesn't use any magic, so your IDE should be able to autocomplete all method calls as you type.
 
 [![Build Status](https://travis-ci.org/orukusaki/TwiML.svg?branch=master)](https://travis-ci.org/orukusaki/TwiML)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/orukusaki/TwiML/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/orukusaki/TwiML/?branch=master)
 
 For example:
 ```php
